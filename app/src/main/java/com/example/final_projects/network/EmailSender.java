@@ -7,13 +7,14 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
+import com.example.final_projects.BuildConfig;
 import java.util.Collections;
 import java.util.Locale;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class EmailSender {
-    private static final String BREVO_API_KEY = "";
+    private static final String BREVO_API_KEY = BuildConfig.BREVO_API_KEY;
     
     private static EmailApiService service;
 
