@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/white">
+
+        <!-- Label & Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREMIUM SELECTION"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/tv_frame_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Square Frame"
+            android:textColor="#212529"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Image Container -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:background="#F5F8F7"
+            android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/img_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/square"
+                android:contentDescription="Product Image" />
+
+            <TextView
+                android:id="@+id/tv_frame_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/category_bg"
+                android:backgroundTint="#FFEBEE"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="Out of Stock"
+                android:textColor="#D32F2F"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Rating Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐⭐⭐⭐"
+                android:textColor="#FFA000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_frame_rating_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="4.6 (147)"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Price Info -->
+        <TextView
+            android:id="@+id/tv_frame_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="$15,000.00"
+            android:textColor="@color/brand_dark_teal"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Frame only · lenses added at checkout"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <!-- Feature Grid (Matching Images 2 & 3) -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- Card: Frame Style -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F8FAFA">
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/square" app:tint="@color/brand_dark_teal" android:contentDescription="Style Icon"/>
+                    <TextView android:text="FRAME STYLE" android:textSize="10sp" android:textColor="#999999" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Full-rim acetate, soft-satin finish" android:textSize="13sp" android:textColor="#212529" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card: Shape -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F8FAFA">
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/square" app:tint="@color/brand_dark_teal" android:contentDescription="Shape Icon"/>
+                    <TextView android:text="SHAPE" android:textSize="10sp" android:textColor="#999999" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Rectangular, rounded corners" android:textSize="13sp" android:textColor="#212529" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card: Lens -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F8FAFA">
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ai" app:tint="@color/brand_dark_teal" android:contentDescription="Lens Icon"/>
+                    <TextView android:text="LENS" android:textSize="10sp" android:textColor="#999999" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Clear, non-tinted, anti-glare" android:textSize="13sp" android:textColor="#212529" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card: Bridge -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F8FAFA">
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_ai" app:tint="@color/brand_dark_teal" android:contentDescription="Bridge Icon"/>
+                    <TextView android:text="BRIDGE &amp; TEMPLE" android:textSize="10sp" android:textColor="#999999" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Keyhole bridge, curved arms" android:textSize="13sp" android:textColor="#212529" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+        <!-- About section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="ABOUT THIS FRAME"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/tv_frame_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="A full-rim acetate silhouette in a soft-satin finish, with rounded rectangular lenses that lean into a thick-rimmed, geek-chic look. The keyhole bridge sits clos..."
+            android:textColor="#546E7A"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Read more"
+            android:textColor="@color/brand_dark_teal"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_card_customize"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Customize in Hub →"
+            android:textAllCaps="false"
+            android:textColor="#999999" />
+
+        <!-- Fixed bottom-style action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_card_tryon"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                android:text="Try-On"
+                app:icon="@drawable/ic_ai"
+                android:textAllCaps="false"
+                android:textColor="@color/brand_dark_teal"
+                app:strokeColor="@color/brand_dark_teal"
+                app:strokeWidth="1.5dp"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_card_cart"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/brand_medium_teal"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_cart"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

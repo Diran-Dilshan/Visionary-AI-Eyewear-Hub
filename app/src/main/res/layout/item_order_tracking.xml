@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#EEEEEE"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Header Info -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:id="@+id/icon_container"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_order_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_order_frame"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/glass"
+                    android:contentDescription="Ordered Frame" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_order_items"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="Aria Round — Tortoise"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/iv_expand_arrow"
+                app:layout_constraintStart_toEndOf="@id/icon_container"
+                app:layout_constraintTop_toTopOf="@id/icon_container" />
+
+            <TextView
+                android:id="@+id/tv_order_id_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="VS-10482 • Optical • $186"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tv_order_items"
+                app:layout_constraintTop_toBottomOf="@id/tv_order_items" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/category_bg"
+                android:backgroundTint="#E8F5E9"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="Delivered"
+                android:textColor="#2E7D32"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tv_order_id_price"
+                app:layout_constraintTop_toBottomOf="@id/tv_order_id_price" />
+
+            <TextView
+                android:id="@+id/tv_status_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Delivered Aug 8"
+                android:textColor="#999999"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_order_status"
+                app:layout_constraintStart_toEndOf="@id/tv_order_status"
+                app:layout_constraintTop_toTopOf="@id/tv_order_status" />
+
+            <ImageView
+                android:id="@+id/iv_expand_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_down_arrow"
+                app:layout_constraintBottom_toBottomOf="@id/icon_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon_container"
+                app:tint="#CCCCCC" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Hidden Journey Details -->
+        <LinearLayout
+            android:id="@+id/layout_journey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="24dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F0F0F0"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Progress Bar Logic -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="24dp">
+
+                <!-- Connectors -->
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:background="#EEEEEE"
+                    android:layout_marginHorizontal="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <View android:id="@+id/dot_placed" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:background="@drawable/dot_green" />
+                    </FrameLayout>
+
+                    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <View android:id="@+id/dot_quality" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:background="@drawable/dot_inactive" />
+                    </FrameLayout>
+
+                    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <View android:id="@+id/dot_shipped" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:background="@drawable/dot_inactive" />
+                    </FrameLayout>
+
+                    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <View android:id="@+id/dot_delivered" android:layout_width="20dp" android:layout_height="20dp" android:layout_gravity="center" android:background="@drawable/dot_inactive" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Labels -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp"
+                android:weightSum="4">
+
+                <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Placed" android:textSize="10sp" android:textColor="#666666"/>
+                    <TextView android:id="@+id/tv_date_placed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aug 6" android:textSize="9sp" android:textColor="#999999"/>
+                </LinearLayout>
+
+                <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quality" android:textSize="10sp" android:textColor="#666666"/>
+                    <TextView android:id="@+id/tv_date_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aug 8" android:textSize="9sp" android:textColor="#999999"/>
+                </LinearLayout>
+
+                <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shipped" android:textSize="10sp" android:textColor="#333333" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tv_date_shipped" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aug 10" android:textSize="9sp" android:textColor="#999999"/>
+                </LinearLayout>
+
+                <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delivered" android:textSize="10sp" android:textColor="#999999"/>
+                    <TextView android:id="@+id/tv_date_delivered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textSize="9sp" android:textColor="#999999"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

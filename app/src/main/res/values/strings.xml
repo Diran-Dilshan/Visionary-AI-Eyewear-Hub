@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Final_Projects</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Log in to your account</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="create_account_text">Don\'t have an account? Create one</string>
+    <string name="logo_desc">Logo</string>
+
+    <!-- Landing Page Strings -->
+    <string name="landing_logo_desc">Visionary Logo</string>
+    <string name="title_select_frame">Select a Glass Frame</string>
+    <string name="subtitle_select_frame">Browse our premium collection of frames</string>
+    <string name="title_upload_report">Upload Vision Report</string>
+    <string name="subtitle_upload_report">Submit your prescription for custom lenses</string>
+    <string name="title_virtual_tryon">Virtual Face Try-On</string>
+    <string name="subtitle_virtual_tryon">Experience AI-powered frame try-on</string>
+    <string name="title_my_orders">My Orders</string>
+    <string name="subtitle_my_orders">Track your current and past eyewear orders</string>
+    <string name="title_find_store">Find the Vision Care Location</string>
+    <string name="subtitle_find_store">Locate a professional vision check center</string>
+
+    <string name="greeting_morning">Good morning</string>
+    <string name="search_hint">Search services...</string>
+    <string name="promo_title">SPECIAL OFFER</string>
+    <string name="promo_content">20% off Glass\nFrames</string>
+    <string name="btn_buy_now">Buy now</string>
+    <string name="cat_all">All frames</string>
+    <string name="cat_sun">Sun</string>
+    <string name="cat_optical">Optical</string>
+    <string name="cat_blue_light">Blue Light</string>
+    <string name="label_select_services">Select services</string>
+    <string name="label_see_all">See all →</string>
+    <string name="desc_notifications">Notifications</string>
+
+    <string name="title_customize_hub">Customize Your Hub</string>
+    <string name="label_eyewear_hub">EYEWEAR HUB</string>
+    <string name="label_select_frame_type">Select Frame Type:</string>
+    <string name="label_frame_material">Frame Material:</string>
+    <string name="label_select_frame_color">Select Frame Color:</string>
+    <string name="frame_black_square">BLACK SQUARE</string>
+    <string name="frame_tortoiseshell">TORTOISESHELL</string>
+    <string name="frame_metal_aviator">METAL AVIATOR</string>
+
+    <string name="opt_feedback">Feedback</string>
+    <string name="opt_post">Post</string>
+    <string name="opt_ai_assistant">AI Assistant</string>
+
+    <!-- Signup Strings -->
+    <string name="create_account_title">Create Account</string>
+    <string name="signup_subtitle">Join us to get started</string>
+    <string name="name_hint">Full Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="already_have_account_text">Already have an account? Login</string>
+
+    <!-- Forgot & Reset Password -->
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="subtitle_forgot_password">Enter your email to receive a reset link</string>
+    <string name="btn_send_reset_link">Send Reset Link</string>
+    <string name="label_back_to_login">Back to Login</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="subtitle_reset_password">Enter your new password below</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_new_password">Confirm New Password</string>
+    <string name="btn_update_password">Update Password</string>
+    <string name="label_forgot_password">Forgot Password?</string>
+
+    <!-- Virtual Try On -->
+    <string name="title_virtual_try_on">VIRTUAL TRY-ON</string>
+    <string name="label_frame_name">FRAME: \'Visionary Elite\'</string>
+    <string name="label_frame_price">$189.00</string>
+    <string name="label_pattern">PATTERN</string>
+    <string name="label_frame_shape">FRAME SHAPE</string>
+    <string name="label_solid_color">SOLID COLOR</string>
+    <string name="label_temple_style">TEMPLE STYLE</string>
+    <string name="label_frame_scale">Frame Scale</string>
+    <string name="label_pd">Pupillary Distance</string>
+    <string name="label_tilt">Tilt</string>
+    <string name="btn_add_to_cart">[ ADD TO CART ]</string>
+    <string name="btn_save_design">[ SAVE DESIGN ]</string>
+
+    <!-- Catalog Strings -->
+    <string name="catalog_title">Glass Collection</string>
+    <string name="catalog_subtitle">Choose Your Style</string>
+    <string name="name_square">Classic Square Elite</string>
+    <string name="desc_square">Modern thick-rimmed acetate frame with premium finish. Suitable for all face shapes.</string>
+    <string name="price_square">$129.00</string>
+    <string name="rating_square">4.8 (156)</string>
+    <string name="name_tortoise">Retro Tortoiseshell</string>
+    <string name="desc_tortoise">Vintage patterns with a premium feel and warm tones. A timeless classic.</string>
+    <string name="price_tortoise">$149.00</string>
+    <string name="rating_tortoise">4.5 (89)</string>
+    <string name="name_aviator">Aviator Legend</string>
+    <string name="desc_aviator">Timeless metal frame design for a bold and sleek look. Durable and lightweight.</string>
+    <string name="price_aviator">$189.00</string>
+    <string name="rating_aviator">4.9 (210)</string>
+    <string name="status_in_stock">In Stock</string>
+    <string name="status_limited">Limited</string>
+
+    <!-- Payment Strings -->
+    <string name="title_payment">Secure Payment</string>
+    <string name="label_order_total">Order Total:</string>
+    <string name="hint_card_name">Name on Card</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_expiry">MM/YY</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="btn_pay_now">Pay Now</string>
+    <string name="msg_payment_success">Payment Successful!</string>
+    <string name="msg_payment_failed">Payment Failed. Please try again.</string>
+    <string name="err_invalid_card">Invalid card number</string>
+    <string name="err_invalid_expiry">Invalid expiry date</string>
+    <string name="err_invalid_cvv">Invalid CVV</string>
+
+    <!-- Checkout Strings -->
+    <string name="checkout_title">Checkout</string>
+    <string name="label_full_name">Full Name *</string>
+    <string name="label_email">Email Address *</string>
+    <string name="label_phone_number">Phone Number *</string>
+    <string name="label_delivery_address">Delivery Address *</string>
+    <string name="btn_proceed_confirm">✓ Proceed to Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Order Confirmation Strings -->
+    <string name="title_confirm_order">Confirm Order</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_order_items">Order Items</string>
+    <string name="label_delivery_details">Delivery Details</string>
+    <string name="label_subtotal">Subtotal:</string>
+    <string name="label_total">Total:</string>
+    <string name="btn_confirm_place_order">✓ Confirm &amp; Place Order</string>
+    <string name="btn_back_to_edit">Back to Edit</string>
+
+    <!-- Success Page Strings -->
+    <string name="title_order_placed">Order Placed!</string>
+    <string name="subtitle_order_placed">Thank you for your order</string>
+    <string name="label_order_id">Order ID</string>
+    <string name="label_total_amount">Total Amount</string>
+    <string name="msg_email_sent">A confirmation email has been sent to </string>
+    <string name="btn_continue_shopping">Continue Shopping</string>
+</resources>

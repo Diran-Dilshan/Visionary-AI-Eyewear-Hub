@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_yellow">#FEF5B1</color>
+    <color name="brand_light_teal">#97E7E1</color>
+    <color name="brand_medium_teal">#5CBDB9</color>
+    <color name="brand_dark_teal">#35858B</color>
+
+    <color name="purple_200">#97E7E1</color>
+    <color name="purple_500">#35858B</color>
+    <color name="purple_700">#2A6A6F</color>
+    <color name="teal_200">#5CBDB9</color>
+    <color name="teal_700">#35858B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
