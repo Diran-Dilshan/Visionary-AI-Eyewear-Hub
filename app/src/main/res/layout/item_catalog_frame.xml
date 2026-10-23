@@ -48,8 +48,7 @@
                 android:id="@+id/img_frame"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="8dp"
-                android:scaleType="fitCenter"
+                android:scaleType="centerCrop"
                 android:src="@drawable/square"
                 android:contentDescription="Product Image" />
 
